@@ -1,0 +1,301 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Tushar}{Nikam}{\href{mailto:tusharnikam002@gmail.com}{tusharnikam002@gmail.com} | +91 9595242507 | {Nashik, MH, India} | \href{https://www.linkedin.com/in/tushar-nikam-dev}{\faLinkedinSquare}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.66\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Adda52}
+\descript{| Software Engineer }
+\location{Aug 2022 - July 2023 | Gurgaon, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Experience working on \href{https://www.adda.games}{\bf Addagames} [{\bf  \href{https://www.adda.games}{\bf Android} + \href{https://apps.apple.com/in/app/addagames/id1565328482}{\bf iOS}]} a multi-gaming platform and \href{https://play.google.com/store/apps/details?id=com.addagames.rummy}{\bf Adda52Rummy}  \href{https://play.google.com/store/apps/details?id=com.addagames.rummy}{\bf [Android]}  application.
+\item Implemented push notifications, resulting in a {\bf 50\%} increase in user retention and a {\bf 20\%} boost in daily active users.
+\item Optimized app performance, achieving a crash-free rate of {\bf 98.7\%} and improving response time by {\bf 25\%}.
+\item Integrated analytics tools such as {\bf Firebase Analytics} and {\bf MoEngage} resulted in data-driven insights that led to a {\bf 15\%} increase in user retention and a {\bf 10\%} growth in in-app purchases.
+\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{Defy Club}
+\descript{| Mobile Engineer }
+\location{May 2022 – July 2022 | Bangalore , India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and executed {\bf unit}, {\bf widget}, and {\bf integration tests} for an \href{https://defy.club}{\bf Defy club} app, improving code quality and reducing bugs, resulting in a {\bf 20\%} decrease in overall software defects.
+\item Achieved {\bf 15\%} increase in user retention and {\bf 25\%} growth in daily active users through {\bf Send and Receive Coin} feature, enhancing user engagement.
+\item Explored {\bf Web3} and gained expertise in {\bf Ethereum}, {\bf Solidity}, and {\bf smart contract}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mind Sports League Pvt Ltd}
+\descript{| Flutter Developer }
+\location{April 2021 – May 2022 | Gurgaon, India}
+\begin{tightemize}
+\item Developed \href{https://play.google.com/store/apps/details?id=com.hashtag.poker.app}{\bf HashtagPoker} app from scratch with a team of three developers for {\bf Android} and {\bf iOS} platforms.
+\item Implemented {\bf simulation puzzles}, {\bf private tournaments}, and poker {\bf oval table} features, resulting in {\bf 20\%} increase in daily active users
+\item Reduced app crashes by {\bf 40\%} through feature introduction, architecture redesign, and implementation of new coding paradigms.
+\item Improved app performance by {\bf 15\%} and increased user engagement by {\bf 20\%} through the successful addition of new features, {\bf architecture} redesign, and implementation of new coding paradigms.
+
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mind Sports League Pvt Ltd}
+\descript{| Flutter Developer Intern }
+\location{Nov 2020 – April 2021 | Gurgaon, India}
+\begin{tightemize}
+\item Ensured {\bf UI/UX} consistency for \href{https://play.google.com/store/apps/details?id=com.hashtag.poker.app}{\bf HashtagPoker} for {\bf Android} and {\bf iOS} by integrating third-party libraries and implementing responsive layouts using Flutter.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Freelancer}
+\descript{| Freelancer Flutter Developer }
+\location{Feb 2020 – Oct 2020 | Nashik, India}
+\begin{tightemize}
+\item Developed \href{https://play.google.com/store/apps/details?id=com.moneeys.io}{\bf Moneeys}, \href{https://play.google.com/store/apps/details?id=com.yesdaida.ydnews&hl=en_IN&gl=US}{\bf YD News}, \href{https://play.google.com/store/apps/details?id=jp.bodycarehome.app}{\bf Body Care Home}, \href{https://play.google.com/store/apps/details?id=com.accountants.cheylesmore&hl=en_IN&gl=US}{\bf Cheylesmore}, and \href{https://play.google.com/store/apps/details?id=com.webglobic.inshape&hl=en_IN&gl=US}{\bf Inshape365}, applications from scratch for both \href{https://play.google.com/store/apps/details?id=jp.bodycarehome.app}{\bf Android} and \href{https://apps.apple.com/us/app/body-care-home/id1577377364?l=ru}{\bf iOS} platforms
+\end{tightemize}
+\sectionsep
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     RESEARCH
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Savitribai Phule Pune University}
+\sectionsep
+\descript{BE in Computer Enginnering} 
+\location{Grad. June 2021 | Nashik, MH, India} 
+\sectionsep
+
+% \subsection{Cornell University}
+% \descript{BS in Computer Science}
+% \location{May 2014 | Ithaca, NY}
+% College of Engineering \\
+% Magna Cum Laude\\
+% \location{ Cum. GPA: 3.83 / 4.0 \\
+% Major GPA: 3.9 / 4.0}
+% \sectionsep
+
+% \subsection{La Martiniere for Boys}
+% \location{Grad. May 2011|  Kolkata, India}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.33\textwidth} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+\location{Languages:}
+\textbullet{}  Advance: Dart, C++  \\
+\textbullet{}  Intermediate: C, Core Java  \\
+\textbullet{}  Novice: Solidity, JavaScript, \\
+\sectionsep
+
+\location{Mobile App Development:}
+\textbullet{} Flutter \textbullet{} Android \textbullet{} Android Studio  \\
+\sectionsep
+
+\location{Tools:}
+\textbullet{} Git \textbullet{} GitHub \textbullet{} Gitlab \textbullet{} MacOS \textbullet{} Linux \\
+\textbullet{} Windows \textbullet{} Visual Studio Code \\
+\textbullet{} Postman \textbullet{} Jira \\
+\sectionsep
+
+\location{Technologies:}
+\textbullet{} HTML \textbullet{} CSS \textbullet{} MySQL \textbullet{} Firebase  \\
+\sectionsep
+
+
+
+
+%  \textbullet{} Firebase  \\
+% \location{Web Development:}
+% HTML \textbullet{} CSS \textbullet{} JavaScript \\
+
+ % MySQL \textbullet{}  Adobe XD \textbullet{} Figma \textbullet{} JIRA \textbullet{} JSON \\
+% \textbullet{} Postman \textbullet{}   \\
+% \location{Familiar:}
+% Core Java \textbullet{} Python \textbullet{} NoSQL
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Links} 
+% Github:// \href{https://github.com/champ96k}{\bf champ96k} \\
+% LinkedIn://  \href{https://www.linkedin.com/in/tushar-nikam-dev/}{\bf tushar-nikam-dev} \\
+% Portfolio://  \href{https://champ96k.github.io}{\bf champ96k.github.io} \\
+% Medium://  \href{https://champ96k.medium.com}{\bf champ96k} \\
+% Blogs://  \href{https://champ96kblogs.netlify.app}{\bf champ96kblogs}\\
+% Stackoverflow://  \href{https://stackoverflow.com/users/11157840/tushar-nikam}{\bf tushar-nikam} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DART PUB PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Pub Packages \href{https://github.com/champ96k}{\faGithub} } 
+\begin{tabular}{lll}
+Mar - 2020	     & \href{https://pub.dev/packages/flutter_onboarding_screen}{Flutter onboarding screen}\\
+Dec - 2020	         & \href{https://pub.dev/packages/flutter_walkthrough_screen} {Flutter walkthrough screen} \\
+Sep - 2021	         & \href{https://pub.dev/packages/dashed_rect} {Dashed rect} \\
+Dec - 2022	         & \href{https://pub.dev/packages/int_to_words} {int to words} \\
+Jan - 2023	         & \href{https://pub.dev/packages/emerge_alert_dialog} {Emerge alert dialog} \\
+July - 2023	         & \href{https://pub.dev/packages/minimal_http_client} { Minimal HTTP client} \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project} 
+
+\href{https://play.google.com/store/apps/details?id=tutefox_app.com} {\bf TuteFox} : \\
+\textbullet{} TuteFox is an {\bf online learning} Application where you get will best YouTube, Udemey, and other top learning platform courses \\
+\sectionsep
+
+\href{https://github.com/champ96k/coronavirus-tracker-app} {\bf Covid19 tracker} : \\
+\textbullet{} COVID-19 is mobile tracking app to track the {\bf coronavirus outbreak}. {\bf Open source} and built with flutter \\
+\sectionsep
+
+\section{Extracurriculars} 
+
+\textbullet{} Volunteered for \href{https://gdg.community.dev/events/details/google-gdg-nashik-presents-gdg-devfest-nashik-2019}{\bf DevFest Nashik 2019} organized by \href{https://gdg.community.dev/gdg-nashik}{\bf GDG Nashik}, led coordination for \href{https://siem.sandipfoundation.org}{\bf college} fest TechFight {\bf 2k19}, {\bf 2k20}, and \href{https://www.awsugnsk.in}{\bf AWS User Group Nashik}. \\
+\sectionsep
+
+\textbullet{} {\bf 1.4 million} people reached on {\bf Stackoverflow} and earn {\bf 1437+} reputation user name:   \href{https://stackoverflow.com/users/11157840/tushar-nikam}{\faStackOverflow} : \href{https://stackoverflow.com/users/11157840/tushar-nikam}{\bf  tushar-nikam}  \\
+\sectionsep
+
+\textbullet{} Publish a technical article on \href{https://champ96k.medium.com} {\bf Medium} and more than {\bf 50k+} views  \href{https://champ96k.medium.com}{\faMedium}  \\
+\sectionsep
+
+\textbullet{} Open source contribution on official \href{https://github.com/WorldHealthOrganization/app}{\bf World Health Organization} app  \href{https://github.com/WorldHealthOrganization/app}{\faGithub} \\
+\sectionsep
+
+\textbullet{} Conducted a  \href{https://gdsc.community.dev/events/details/developer-student-clubs-manav-rachna-international-institute-of-research-and-studies-faridabad-presents-flutter-fest-day-1-introduction/}{\bf four-day} workshop at \href{https://gdsc.community.dev/manav-rachna-international-institute-of-research-and-studies-faridabad}{\bf MRIIRS} in {\bf Faridabad}, Haryana, India. \\
+
+
+% {\bf Covid19 tracker} : \\
+% \textbullet{} COVID-19 is mobile tracking app to track the {\bf coronavirus outbreak}. {\bf Open source} and built with flutter \\
+% \sectionsep
+
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
